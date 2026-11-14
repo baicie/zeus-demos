@@ -1,0 +1,150 @@
+{
+  "schema": "zeus.ai-demo/v1",
+  "generatedAt": "2026-11-14T06:52:48.758Z",
+  "uiCommit": "89fc93cac5b97f29f48deb64964886476c5d7aac",
+  "coreCommit": "69f494f270c8fb501b34759dc22d2a9de7aee951",
+  "streamId": "reference",
+  "events": [
+    {
+      "schemaVersion": 2,
+      "streamId": "reference",
+      "seq": 1,
+      "eventId": "evt-reference-1",
+      "entity": {
+        "kind": "conversation",
+        "id": "workbench"
+      },
+      "type": "conversation.upserted",
+      "payload": {
+        "conversation": {
+          "id": "workbench",
+          "title": "Reference conversation",
+          "revision": 1
+        }
+      },
+      "occurredAt": "2026-01-01T00:00:01.000Z"
+    },
+    {
+      "schemaVersion": 2,
+      "streamId": "reference",
+      "seq": 2,
+      "eventId": "evt-reference-2",
+      "entity": {
+        "kind": "message",
+        "id": "message-2"
+      },
+      "type": "message.created",
+      "payload": {
+        "message": {
+          "id": "message-2",
+          "conversationId": "workbench",
+          "author": "user",
+          "parts": [
+            {
+              "id": "part-2",
+              "kind": "text",
+              "revision": 1,
+              "text": "请把 notes/workbench.txt 更新为演示版本，并说明这次改动。",
+              "format": "plain"
+            }
+          ],
+          "status": "complete",
+          "revision": 1,
+          "createdAt": "2026-11-14T06:52:48.728Z"
+        }
+      },
+      "occurredAt": "2026-01-01T00:00:02.000Z"
+    },
+    {
+      "schemaVersion": 2,
+      "streamId": "reference",
+      "seq": 3,
+      "eventId": "evt-reference-3",
+      "entity": {
+        "kind": "execution",
+        "id": "execution-9dd7b4a5-89dc-4117-924c-fd935c89dd4a"
+      },
+      "type": "execution.started",
+      "payload": {
+        "execution": {
+          "id": "execution-9dd7b4a5-89dc-4117-924c-fd935c89dd4a",
+          "kind": "agent",
+          "workspaceId": "reference",
+          "status": "awaiting-approval",
+          "createdAt": "2026-11-14T06:52:48.740Z",
+          "revision": 1,
+          "activeStepIds": []
+        }
+      },
+      "occurredAt": "2026-01-01T00:00:03.000Z"
+    },
+    {
+      "schemaVersion": 2,
+      "streamId": "reference",
+      "seq": 4,
+      "eventId": "evt-reference-4",
+      "entity": {
+        "kind": "approval",
+        "id": "approval-2ecc6e49-50dc-444a-9b6f-6e958a3840f1"
+      },
+      "type": "approval.requested",
+      "payload": {
+        "approval": {
+          "id": "approval-2ecc6e49-50dc-444a-9b6f-6e958a3840f1",
+          "executionId": "execution-9dd7b4a5-89dc-4117-924c-fd935c89dd4a",
+          "title": "Apply workspace changes",
+          "summary": "Write 1 file(s) under reference",
+          "operation": {
+            "kind": "changeset.apply",
+            "target": "workspace:reference"
+          },
+          "scope": "workspace",
+          "risk": "high",
+          "status": "pending",
+          "revision": 1
+        }
+      },
+      "occurredAt": "2026-01-01T00:00:04.000Z"
+    },
+    {
+      "schemaVersion": 2,
+      "streamId": "reference",
+      "seq": 5,
+      "eventId": "evt-reference-5",
+      "entity": {
+        "kind": "changeset",
+        "id": "changeset-approval-2ecc6e49-50dc-444a-9b6f-6e958a3840f1"
+      },
+      "type": "changeset.updated",
+      "payload": {
+        "changeset": {
+          "id": "changeset-approval-2ecc6e49-50dc-444a-9b6f-6e958a3840f1",
+          "executionId": "execution-9dd7b4a5-89dc-4117-924c-fd935c89dd4a",
+          "workspaceId": "reference",
+          "baseRevision": "workspace-head",
+          "files": [
+            {
+              "path": "notes/workbench.txt",
+              "status": "added",
+              "diffAsset": {
+                "id": "approval-2ecc6e49-50dc-444a-9b6f-6e958a3840f1-diff-0",
+                "mimeType": "text/x-diff; charset=utf-8",
+                "size": 103
+              },
+              "stats": {
+                "additions": 1,
+                "deletions": 0
+              }
+            }
+          ],
+          "status": "ready",
+          "revision": 1
+        }
+      },
+      "occurredAt": "2026-01-01T00:00:05.000Z"
+    }
+  ],
+  "assets": {
+    "approval-2ecc6e49-50dc-444a-9b6f-6e958a3840f1-diff-0": "--- a/notes/workbench.txt\n+++ b/notes/workbench.txt\n@@ -1,0 +1,1 @@\n+Zeus AI Workbench demo workspace.\n"
+  }
+}

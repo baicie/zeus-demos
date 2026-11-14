@@ -1,0 +1,40 @@
+{
+  "schema": "zeus.demo-pairing/v1",
+  "createdAt": "2026-11-14T06:52:50.460Z",
+  "coreCommit": "69f494f270c8fb501b34759dc22d2a9de7aee951",
+  "uiCommit": "89fc93cac5b97f29f48deb64964886476c5d7aac",
+  "coreVersion": "0.1.1-beta.20",
+  "uiVersion": "0.1.0-beta.35",
+  "aiRuntime": {
+    "package": "@zeus-js/zeus",
+    "version": "0.1.1-beta.20"
+  },
+  "build": {
+    "workflow": "Demos Pages",
+    "runId": "43568170653",
+    "runUrl": "https://github.com/baicie/zeus/actions/runs/43568170653"
+  },
+  "products": [
+    {
+      "product": "admin",
+      "artifactDigest": "sha256:eea9ff95ce97646713b66cabeedb7a35062fd9e18b04e3e15e86e0e0a81c5bab",
+      "files": 69,
+      "bytes": 610493,
+      "metadata": {
+        "file": "demo-snapshot.json",
+        "digest": "sha256:23d8c363b45c02292367fcecdd6690a48c5b1e739c85d0d06b5f937911ded291"
+      }
+    },
+    {
+      "product": "ai",
+      "artifactDigest": "sha256:5415de7388dc77c0b1393fea515d63ba05c491959e9598f95bf042a357840052",
+      "files": 4,
+      "bytes": 233837,
+      "metadata": {
+        "file": "ai-demo-recording.json",
+        "digest": "sha256:eceedd7f8a233278e90bdf8bf686b9aa6b0bcc9b703f5b7e3d61db93c6d23fbf"
+      }
+    }
+  ],
+  "siteDigest": "sha256:6f62285e524ead98d7a72534f038ced1f3d11acc6d630d8620e2ca5a12961ae3"
+}
