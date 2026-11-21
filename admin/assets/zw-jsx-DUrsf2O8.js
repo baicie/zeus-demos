@@ -1,0 +1,1 @@
+function e(e){return{ref:e}}function t(e,t){return{[`prop:${e}`]:t}}export{e as n,t};
