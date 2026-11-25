@@ -1,0 +1,119 @@
+{
+  "schema": "zeus.admin-demo/v1",
+  "generatedAt": "2026-11-25T07:51:49.743Z",
+  "coreCommit": "a41f10f92286f9b8142a841c013f59058fbf6a96",
+  "uiCommit": "16c7dd13db310d58ccc1ac8cd14e38ec5938cc99",
+  "session": {
+    "id": "ada",
+    "name": "Ada Lovelace",
+    "email": "ada@example.test",
+    "team": "平台",
+    "status": "active",
+    "role": "admin"
+  },
+  "summary": {
+    "totalUsers": 8,
+    "teams": 5,
+    "auditEvents": 2
+  },
+  "users": [
+    {
+      "id": "ada",
+      "name": "Ada Lovelace",
+      "email": "ada@example.test",
+      "team": "平台",
+      "status": "active",
+      "role": "admin"
+    },
+    {
+      "id": "dennis",
+      "name": "Dennis Ritchie",
+      "email": "dennis@example.test",
+      "team": "运行时",
+      "status": "suspended",
+      "role": "viewer"
+    },
+    {
+      "id": "grace",
+      "name": "Grace Hopper",
+      "email": "grace@example.test",
+      "team": "编译器",
+      "status": "active",
+      "role": "viewer"
+    },
+    {
+      "id": "guido",
+      "name": "Guido van Rossum",
+      "email": "guido@example.test",
+      "team": "工具链",
+      "status": "suspended",
+      "role": "viewer"
+    },
+    {
+      "id": "linus",
+      "name": "Linus Torvalds",
+      "email": "linus@example.test",
+      "team": "基础设施",
+      "status": "active",
+      "role": "viewer"
+    },
+    {
+      "id": "margaret",
+      "name": "Margaret Hamilton",
+      "email": "margaret@example.test",
+      "team": "平台",
+      "status": "invited",
+      "role": "viewer"
+    },
+    {
+      "id": "radia",
+      "name": "Radia Perlman",
+      "email": "radia@example.test",
+      "team": "基础设施",
+      "status": "active",
+      "role": "viewer"
+    },
+    {
+      "id": "yukihiro",
+      "name": "Yukihiro Matsumoto",
+      "email": "ruby@example.test",
+      "team": "工具链",
+      "status": "invited",
+      "role": "viewer"
+    }
+  ],
+  "audit": [
+    {
+      "id": 3,
+      "actor_id": "ada",
+      "action": "user.update",
+      "target": "dennis",
+      "outcome": "success",
+      "detail": "{\"email\":\"dennis@example.test\",\"role\":\"viewer\",\"status\":\"suspended\"}",
+      "created_at": "2026-11-25T07:51:49.738Z"
+    },
+    {
+      "id": 2,
+      "actor_id": "ada",
+      "action": "login",
+      "target": "ada",
+      "outcome": "success",
+      "detail": null,
+      "created_at": "2026-11-25T07:51:49.719Z"
+    },
+    {
+      "id": 1,
+      "actor_id": null,
+      "action": "seed",
+      "target": "database",
+      "outcome": "success",
+      "detail": "initial demo data",
+      "created_at": "2026-11-25T07:51:49.407Z"
+    }
+  ],
+  "settings": {
+    "workspaceName": "Zeus Admin",
+    "locale": "zh-CN",
+    "theme": "light"
+  }
+}
